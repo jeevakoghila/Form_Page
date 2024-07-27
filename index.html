@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Detailed Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+    <h1 id="title">Welcome to Our Survey</h1>
+    <p id="description">Please fill out the form below to help use improve our services.</p>
+    </header>
+    <form id="survey-form">
+  <label for="name" id="name-label">Name <br>
+    <input id="name" type="text" name="name" placeholder="Enter your Name" required>
+  </label><br><br>
+  <label for="email" id="email-label">Email <br>
+    <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+  </label><br><br>
+  <label for="number" id="number-label">Age (optional) <br>
+    <input id="number" type="number" name="age" min="18" max="99" placeholder="Enter your age">
+  </label><br><br>
+      <p>Category:</p>
+      <select id="dropdown" Aname="dropdown">
+        <option value="select">Select current role</option>
+        <option value="student">Student</option>
+        <option value="employed">Employed</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="retired">Retired</option>
+        <option value="self-employed">Self-employed</option>
+        <option value="other">Other</option>
+      </select><br><br>
+      <p>Preferred Contact Method:</p>
+<label>
+  <input type="radio" id="phone_contact" name="contact_method" value="phone"> Phone
+</label><br>
+<label>
+  <input type="radio" id="email_contact" name="contact_method" value="email"> Email
+</label><br>
+<label>
+  <input type="radio" id="mail_contact" name="contact_method" value="mail"> Mail
+</label><br>
+      <p>How Satisfied are you with our service?</p>
+      <select name="satisfaction" id="satisfaction">
+        <option value="Select">Select Option</option>
+        <option value="very_satisfied">Very Satisfied</option>
+        <option value="Satisfied">Satisfied</option>
+        <option value="Netural">Netural</option>
+        <option value="dissatisfied">Dissatisfied</option>
+        <option value="very_dissatisfied">Very Dissatisfied</option>
+      </select><br>
+      <p>Interests</p>
+      <label>
+        <input type="checkbox" id="interest1" name="interests" value="sports"> Sports
+      </label><br>
+      <label>
+        <input type="checkbox" id="interest2" name="interests" value="music"> Music
+      </label><br>
+      <label>
+        <input type="checkbox" id="interest3" name="interests" value="dance"> Dance
+      </label><br>
+      <label>
+        <input type="checkbox" id="interest4" name="interests" value="cooking"> Cooking
+      </label><br>
+      <label>
+        <input type="checkbox" id="interest5" name="interests" value="reading"> Reading
+      </label><br>
+      <p>Additional Comments</p>
+        <textarea id="text" name="text" rows="4" cols="50" placeholder="Enter your comments here..."></textarea><br><br>
+      <button id="submit">Submit</button> 
+    </form>
+  </body>
+</html>
